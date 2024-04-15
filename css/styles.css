@@ -504,6 +504,10 @@ header .container {
   color: #8e8f99;
 }
 .icon-checkbox {
+  opacity: 0;
+}
+input:checked + .modal-privacy .span-checkbox {
+  background-color: #404bbf;
 }
 .privacy-policy {
   line-height: 133%;
@@ -528,6 +532,12 @@ header .container {
   border: none;
   margin: 0 auto;
   cursor: pointer;
+}
+.span-ckeckbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
 }
 .modal-label {
   display: block;
