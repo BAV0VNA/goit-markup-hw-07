@@ -445,6 +445,10 @@ header .container {
   top: 24px;
   right: 24px;
 }
+.modal-close-btn:hover {
+  border: none;
+  background-color: #404bbf;
+}
 
 .modal-title {
   font-weight: 500;
