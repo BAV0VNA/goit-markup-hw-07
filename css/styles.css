@@ -696,6 +696,7 @@ input:checked + .modal-privacy .span-checkbox {
   line-height: 200%;
   letter-spacing: 0.04em;
   color: #fff;
+  background-color: transparent;
 }
 .input-sub::placeholder {
   font-weight: 400;
@@ -710,7 +711,7 @@ input:checked + .modal-privacy .span-checkbox {
   align-items: center;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background: #4d5ae5;
   font-weight: 500;
@@ -720,6 +721,7 @@ input:checked + .modal-privacy .span-checkbox {
   text-align: center;
   color: #fff;
   border: none;
+  cursor: pointer;
 }
 svg.icon-btm-sub {
   margin-left: 16px;
