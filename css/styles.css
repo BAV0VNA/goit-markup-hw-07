@@ -443,6 +443,10 @@ header .container {
   background: var(--dairy);
 }
 .modal-close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
   position: absolute;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -587,7 +591,6 @@ input:checked + .modal-privacy .span-checkbox {
   position: absolute;
   left: 16px;
   top: 50%;
-  transform: translateY(-50%);
 }
 
 /* Footer */
