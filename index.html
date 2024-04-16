@@ -414,8 +414,15 @@
       <div class="backdrop">
         <div class="modal">
           <button class="modal-close-btn">
-            <svg class="modal-close-icon" width="8" height="8">
-              <use href="./images/icons.svg#icon-Ellipse9"></use>
+            <svg class="svg-close" width="8" height="8">
+              <use
+                class="modal-close-icon"
+                href="./images/icons.svg#icon-Ellipse9"
+              ></use>
+              <use
+                class="modal-open-icon"
+                href="./images/icons.svg#icon-Ellipse15"
+              ></use>
             </svg>
           </button>
           <p class="modal-title">
@@ -546,6 +553,25 @@
               ></a>
             </li>
           </ul>
+        </div>
+        <div class="footer-subscribe">
+          <p class="footer-cuption-sub">Subscribe</p>
+          <form class="footer-form-sub" action="">
+            <label class="label-sub" for="text">
+              <input
+                class="input-sub"
+                type="email"
+                name="footer-email"
+                placeholder="E-mail"
+            /></label>
+
+            <button class="btm-sub" type="submit">
+              Subscribe
+              <svg class="icon-btm-sub" width="24" height="20">
+                <use href="./images/icons.svg#icon-Ellipse16"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
