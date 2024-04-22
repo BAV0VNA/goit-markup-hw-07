@@ -520,7 +520,8 @@ header .container {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #000; /* Початковий колір SVG-іконки */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Анімація для зміни кольору */
 }
 .modal-input:focus {
   border: 1px solid var(--iris);
@@ -567,7 +568,7 @@ header .container {
   margin-bottom: 16px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
-input:checked .span-checkbox {
+input:checked + .span-checkbox {
   fill: var(--icon-color);
 }
 .input-check:checked + .modal-privacy .span-checkbox .icon-checkbox {
