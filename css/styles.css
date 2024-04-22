@@ -549,6 +549,9 @@ header .container {
 .icon-checkbox {
   opacity: 0;
 }
+input:checked {
+  fill: #f4f4fd;
+}
 input:checked + .modal-privacy .span-checkbox {
   background-color: #404bbf;
   border: none;
@@ -566,7 +569,7 @@ input:checked + .modal-privacy .span-checkbox {
   display: block;
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+ min-width: 169px
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
@@ -579,6 +582,7 @@ input:checked + .modal-privacy .span-checkbox {
   border: none;
   margin: 0 auto;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .span-ckeckbox {
   display: inline-flex;
@@ -589,6 +593,10 @@ input:checked + .modal-privacy .span-checkbox {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
 }
 .modal-label {
   display: block;
